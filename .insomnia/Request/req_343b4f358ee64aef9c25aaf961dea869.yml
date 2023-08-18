@@ -1,0 +1,23 @@
+_id: req_343b4f358ee64aef9c25aaf961dea869
+type: Request
+parentId: fld_db1d67dd35704b54bc2c10573ffbc310
+modified: 1692320323371
+created: 1692320323371
+url: "{{ _.baseurl }}{{ _.endpoints.measurements }}/{% response 'body',
+  'req_f9b964a11dae49868032c6105917ffb3', 'b64::JFswXVsiaWQiXQ==::46b',
+  'always', 60 %}"
+name: Find
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1673735992701
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

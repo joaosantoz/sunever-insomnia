@@ -1,0 +1,43 @@
+_id: req_fad75edb072a41588217a22884b72dbd
+type: Request
+parentId: fld_1ad8351b644944a3907e47d275b0afd3
+modified: 1690425040228
+created: 1673742349363
+url: "{{ _.baseurl }}{{ _.endpoints.recipes }}"
+name: Create
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"name": "{% faker 'word', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'noun', '', 'en_GB' %}",
+    	"description": "{% faker 'lorem', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'sentence', '', '', '', '', '', '', '', '', '', '', 'en_GB' %}",
+    	"ingredients": [
+    		{
+    			"id": "{% response 'body', 'req_3e3d7571bed34f7680e38d199086501d', 'b64::JFswXVsiaWQiXQ==::46b', 'always', 60 %}",
+    			"quantity": {% faker 'datatype', '', '', '', '', '', '', 'float', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'pt_BR' %}
+    		},
+    		{
+    			"id": "{% response 'body', 'req_3e3d7571bed34f7680e38d199086501d', 'b64::JFsxXVsiaWQiXQ==::46b', 'always', 60 %}",
+    			"quantity": {% faker 'datatype', '', '', '', '', '', '', 'float', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'pt_BR' %}
+    		},
+    		{
+    			"id": "{% response 'body', 'req_3e3d7571bed34f7680e38d199086501d', 'b64::JFsyXVsiaWQiXQ==::46b', 'always', 60 %}",
+    			"quantity": {% faker 'datatype', '', '', '', '', '', '', 'float', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'pt_BR' %}
+    		}
+    	]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1673742349363
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,33 @@
+_id: req_0e351a03c266478eb4ee9cb9323f07a1
+type: Request
+parentId: fld_2a8f21a0eb7f4e5e9635ec83d0226313
+modified: 1690424973368
+created: 1673738074762
+url: "{{ _.baseurl }}{{ _.endpoints.ingredients }}/{% response 'body',
+  'req_36380be6474946fa91841e8148fe5080', 'b64::JFsiaWQiXQ==::46b', 'always', 60
+  %}"
+name: Update
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"name": "{% faker 'random', '', '', '', 'productDescription', '', '', '', '', 'accountName', '', '', 'arrayElements', '', '', 'word', '', '', 'firstName', '', 'word', '', '', '', '', '', 'en_GB' %}",
+    	"price": "{% faker 'datatype', '', '', '', '', '', '', 'float', '', '', '', '', 'objectValue', '', '', '', '', '', '', '', 'alpha', '', '', '', '', '', 'en_GB' %}",
+    	"quantityPerMeasure": {% faker 'datatype', '', '', '', '', '', '', 'float', '', '', '', '', 'objectValue', '', '', '', '', '', '', '', 'alpha', '', '', '', '', '', 'en_GB' %},
+    	"measurementId": "{% response 'body', 'req_b1e86cdc6827493abf14a5badd3ba442', 'b64::JFsiaWQiXQ==::46b', 'always', 60 %}"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1673735992719.75
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

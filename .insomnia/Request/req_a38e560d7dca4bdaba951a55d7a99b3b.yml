@@ -1,0 +1,31 @@
+_id: req_a38e560d7dca4bdaba951a55d7a99b3b
+type: Request
+parentId: fld_2a8f21a0eb7f4e5e9635ec83d0226313
+modified: 1690425028767
+created: 1673738074760
+url: "{{ _.baseurl }}{{ _.endpoints.ingredients }}"
+name: Create
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"name": "{% faker 'random', '', '', '', 'productDescription', '', '', '', '', 'accountName', '', '', 'arrayElements', '', '', 'word', '', '', 'firstName', '', 'word', '', '', '', '', '', 'en_GB' %}",
+    	"price": {% faker 'datatype', '', '', '', '', '', '', 'float', '', '', '', '', 'objectValue', '', '', '', '', '', '', '', 'alpha', '', '', '', '', '', 'en_GB' %},
+    	"quantityPerMeasure": {% faker 'datatype', '', '', '', '', '', '', 'float', '', '', '', '', 'objectValue', '', '', '', '', '', '', '', 'alpha', '', '', '', '', '', 'en_GB' %},
+    	"measurementId": "{% response 'body', 'req_f9b964a11dae49868032c6105917ffb3', 'b64::JFswXVsiaWQiXQ==::46b', 'always', 60 %}"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1673735992726
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

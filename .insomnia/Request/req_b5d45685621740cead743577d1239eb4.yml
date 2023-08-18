@@ -1,0 +1,29 @@
+_id: req_b5d45685621740cead743577d1239eb4
+type: Request
+parentId: fld_34c5fdd0ffd74fabaf767844344426da
+modified: 1690416475611
+created: 1673736852578
+url: "{{ _.baseurl }}{{ _.endpoints.measurements }}"
+name: Create
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"name": "{% faker 'random', '', '', '', 'productDescription', '', '', '', '', 'accountName', '', '', 'arrayElements', '', '', 'word', '', '', 'firstName', '', 'word', '', '', '', '', '', 'en_GB' %}",
+    	"abbreviation": "{% faker 'random', '', '', '', '', '', '', '', '', '', '', '', 'objectValue', '', '', '', '', '', '', '', 'alpha', '', '', '', '', '', 'en_GB' %}"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1673735992726
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

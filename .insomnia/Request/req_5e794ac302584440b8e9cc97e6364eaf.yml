@@ -1,0 +1,23 @@
+_id: req_5e794ac302584440b8e9cc97e6364eaf
+type: Request
+parentId: fld_2a8f21a0eb7f4e5e9635ec83d0226313
+modified: 1690417413719
+created: 1673738074764
+url: "{{ _.baseurl }}{{ _.endpoints.ingredients }}/{% response 'body',
+  'req_36380be6474946fa91841e8148fe5080', 'b64::JFsiaWQiXQ==::46b', 'always', 60
+  %}"
+name: Delete
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1673735992716.625
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

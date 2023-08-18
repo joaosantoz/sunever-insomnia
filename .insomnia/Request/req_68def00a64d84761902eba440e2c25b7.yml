@@ -1,0 +1,21 @@
+_id: req_68def00a64d84761902eba440e2c25b7
+type: Request
+parentId: fld_db1d67dd35704b54bc2c10573ffbc310
+modified: 1692320323366
+created: 1692320323366
+url: "{{ _.baseurl }}{{ _.endpoints.measurements }}"
+name: List All
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1673735992713.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

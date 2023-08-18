@@ -1,0 +1,21 @@
+_id: env_ffbcb57d0da9f2de0b98c268f8f7a5ded19ce0ce
+type: Environment
+parentId: wrk_04f0dcd01e3f4fc986ce2c733b055710
+modified: 1673736479809
+created: 1673735914970
+name: Base Environment
+data:
+  endpoints:
+    measurements: /measurements
+    ingredients: /ingredients
+    recipes: /recipes
+dataPropertyOrder:
+  "&":
+    - endpoints
+  "&~|endpoints":
+    - measurements
+    - ingredients
+    - recipes
+color: null
+isPrivate: false
+metaSortKey: 1673735914970

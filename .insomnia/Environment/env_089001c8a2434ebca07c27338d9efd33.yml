@@ -1,0 +1,14 @@
+_id: env_089001c8a2434ebca07c27338d9efd33
+type: Environment
+parentId: env_ffbcb57d0da9f2de0b98c268f8f7a5ded19ce0ce
+modified: 1673736499301
+created: 1673735932731
+name: Dev
+data:
+  baseurl: localhost:8080
+dataPropertyOrder:
+  "&":
+    - baseurl
+color: null
+isPrivate: false
+metaSortKey: 1673735932731
